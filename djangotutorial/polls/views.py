@@ -89,3 +89,6 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'polls/register.html', {'form': form})
+
+def search_polls(request):
+    return render(request, 'polls/search_polls.html')
